@@ -1,0 +1,9 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/home/node/app
+    ports:
+      - 3003:3003
